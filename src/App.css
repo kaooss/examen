@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+}
+.micontenedor >.row{
+    overflow-x:auto;
+    flex-wrap: nowrap;
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
+    scrollbar-color: rgba(255, 255, 51, .8) rgba(0, 0, 0, .8);
+    scrollbar-width: thin;
+    padding-top: 30px;
+ }
+ h1.thecabecera{
+     font-size: 20px !important;
+     color: rgba(255, 255, 51, .8);
+ }
+ .imagen-container{
+     position: relative;
+     transition: transform 0.2s;
+ }
+ .imagen-container:hover{
+     cursor: pointer;
+     transform: scale(1.02);
+ }
+ .imagen-container:hover .overlay{
+     opacity: 1;
+ }
+ .overlay{
+     position:absolute;
+     background-color: rgba(0, 0,0, .8);
+     width: 96%;
+     transition: 0.5s ease;
+     opacity: 0;
+     bottom: 0;
+     font-size: 14px;
+     padding: 20px;
+     text-align: center;
+     margin-left: 2%;
+     margin-right: 2%;
+ }
